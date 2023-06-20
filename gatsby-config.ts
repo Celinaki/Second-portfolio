@@ -1,5 +1,13 @@
 import type { GatsbyConfig } from "gatsby";
 
+require("dotenv").config()
+
+require("dotenv").config({
+
+  path: `.env.${process.env.NODE_ENV}`,
+
+})
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `celinasportfolio`,
@@ -12,8 +20,8 @@ const config: GatsbyConfig = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "3Dv2gzkQwbfLwDqpnekn_-oWJScg8yJQrdJN5wSfCkQ",
-      "spaceId": "z45c72wxtae5"
+      "accessToken":  process.env.CONTENTFUL_ACCESS_TOKEN,
+      "spaceId": process.env.CONTENTFUL_SPACE_ID
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sass", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-source-filesystem',
