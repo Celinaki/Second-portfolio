@@ -12,7 +12,59 @@ html{
     margin: 0;
     padding: 0;
 }
-.header{
-    color:blue;
-    background-color: aqua;
+
+$maincolor: rgb(220, 220, 236);
+$secondarycolor: rgb(53, 52, 52);
+$secondoption: #FFEDED;
+$mainfont: 'Montserrat';
+.navwrapper{
+    color:$secondarycolor;
+    background-color: $secondoption;
+    font-family: 'Montserrat';
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    h1{
+        margin: 0;
+    }
+    .logo{
+        background: blanchedalmond;
+
+    }
+    section.navlist{
+        display: none;
+        a{
+
+        }
+    }
+    section.activenavlist{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $maincolor;
+        a{
+
+        }
+    }
+    .togglebutton{
+        z-index: 2;
+        .menuicon{
+
+        }
+        .closeicon{
+        }
+
+    }
+    ul{
+        list-style: none;
+        height: 100dvh;
+        width: 80%;
+        background-color: $maincolor;
+    }
 }
