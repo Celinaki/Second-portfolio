@@ -55,6 +55,8 @@ $mainfont: 'Montserrat';
             padding: 20px;
             color:$secondarycolor;
             font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
 
         }
     }
@@ -73,4 +75,25 @@ $mainfont: 'Montserrat';
         width: 80%;
         background-color: $maincolor;
     }
+}
+
+@media only screen and (min-width: 991px){
+    .navwrapper{
+        section.navlist{
+    display: flex;
+    a{
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px;
+        color: $secondarycolor;
+        font-weight: bold;
+    }
+    
+}
+.togglebutton{
+    display: none;
+}
+    }
+
+
 }
