@@ -42,6 +42,9 @@ $mainfont: 'Montserrat';
     }
     section.activenavlist{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         position: absolute;
         left: 0;
         top: 0;
@@ -49,6 +52,9 @@ $mainfont: 'Montserrat';
         height: 100vh;
         background-color: $maincolor;
         a{
+            padding: 20px;
+            color:$secondarycolor;
+            font-size: 20px;
 
         }
     }
