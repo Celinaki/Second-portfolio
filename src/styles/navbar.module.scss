@@ -1,75 +1,97 @@
-body{
+$maincolor: rgb(220, 220, 236);
+$fontcolor: rgb(53, 52, 52);
+$secondoption: #FFEDED;
+$mainfont: 'Montserrat';
+
+body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background-color: black;
+    background-color: $secondoption;
+    color: $fontcolor;
+    font-family: 'Montserrat';
+
+
 }
-html{
-    margin: 0;
-    padding: 0;
-}
-#___gatsby{
+
+html {
     margin: 0;
     padding: 0;
 }
 
-$maincolor: rgb(220, 220, 236);
-$secondarycolor: rgb(53, 52, 52);
-$secondoption: #FFEDED;
-$mainfont: 'Montserrat';
-.navwrapper{
-    color:$secondarycolor;
+#___gatsby {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navwrapper {
     background-color: $secondoption;
-    font-family: 'Montserrat';
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 
-    h1{
+    h1 {
         margin: 0;
     }
-    .logo{
-        background: blanchedalmond;
 
-    }
-    section.navlist{
-        display: none;
-        a{
+    .logo {
+        a {
+            text-decoration: none;
+            color: $secondoption;
+            font-weight: 900;
+            padding: 7px 6px;
+            border-radius: 50%;
+            letter-spacing: 1px;
+            background-color: $fontcolor;
 
         }
+
+
     }
-    section.activenavlist{
+
+    section.navlist {
+        display: none;
+
+        a {}
+    }
+
+    section.activenavlist {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
+        bottom: 0;
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
         background-color: $maincolor;
-        a{
+
+
+        a {
             padding: 20px;
-            color:$secondarycolor;
+            color: $fontcolor;
             font-size: 20px;
             font-weight: bold;
             text-decoration: none;
 
         }
     }
-    .togglebutton{
+
+    .togglebutton {
         z-index: 2;
-        .menuicon{
 
+        .closeicon {
+            position: fixed;
+            right: 20px;
         }
-        .closeicon{
-        }
-
     }
-    ul{
+
+    ul {
         list-style: none;
         height: 100dvh;
         width: 80%;
@@ -77,22 +99,24 @@ $mainfont: 'Montserrat';
     }
 }
 
-@media only screen and (min-width: 991px){
-    .navwrapper{
-        section.navlist{
-    display: flex;
-    a{
-        font-size: 18px;
-        text-decoration: none;
-        padding: 10px;
-        color: $secondarycolor;
-        font-weight: bold;
-    }
-    
-}
-.togglebutton{
-    display: none;
-}
+@media only screen and (min-width: 991px) {
+    .navwrapper {
+        section.navlist {
+            display: flex;
+
+            a {
+                font-size: 18px;
+                text-decoration: none;
+                padding: 10px;
+                color: $fontcolor;
+                font-weight: bold;
+            }
+
+        }
+
+        .togglebutton {
+            display: none;
+        }
     }
 
 
