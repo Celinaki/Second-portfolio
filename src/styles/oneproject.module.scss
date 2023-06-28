@@ -1,85 +1,90 @@
-$bordercolor:#edffed;
+$bordercolor: #edffed;
 $accentcolor: #edffff;
 $fontcolor: rgb(53, 52, 52);
 
-.projectwrapper{
-    border-bottom:4px solid$bordercolor;
+.projectwrapper {
+    border-bottom: 4px solid$bordercolor;
     min-height: 35vh;
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &>*{
+
+    &>* {
         width: 90%;
     }
-    .projectimg{
+
+    .projectimg {
         width: 90%;
     }
-    span{
+
+    span {
         display: flex;
-        gap: 0.5rem;
-        align-items: left;
         width: 90%;
         flex-wrap: wrap;
-        p{
-            margin:6px 0px 0px 0px;
+
+        p {
+            margin: .5rem .5rem .5rem 0px;
             border-radius: 5px;
             background-color: $accentcolor;
             padding: 4px 8px;
-
         }
     }
 
-    h2{
+    h2 {
         margin: 0;
         margin-bottom: 1rem;
     }
-    .buttonscontainer{
+
+    .buttonscontainer {
         display: flex;
         padding: 3rem 0rem 0rem 0rem;
         align-items: center;
-  
-       .linkscontainer{
-        display: flex;
-        align-items: center;
-          .projecticons{
-        width: 40px;
-        height: 40px;
-        &:nth-child(2){
-            height: 35px;
+
+        .linkscontainer {
+            display: flex;
+            align-items: center;
+
+            .projecticons {
+                width: 40px;
+                height: 40px;
+
+                &:nth-child(2) {
+                    height: 35px;
+                }
+            }
+        }
+
+        button {
+            //all: unset;
+            text-align: center;
+            border-radius: 5.5px;
+            background-color: inherit;
+            font-family: inherit;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 0.5rem 1rem;
+            width: 41%;
+            color: $accentcolor;
+            background-color: $fontcolor;
+
         }
     }
-       }
-  
-    button{
-        //all: unset;
-        text-align: center;
-        border-radius: 5.5px;
-        background-color: inherit;
-        font-family: inherit;       
-        font-weight: 600;
-        letter-spacing: 1px;
-        padding: 0.5rem 1rem;
-        width: 41%;
-        color: $accentcolor;
-        background-color: $fontcolor;
-
-    }
-    }
 
 }
 
-.projectwrapper:nth-child(odd){
-border-left: 4px solid $bordercolor;
-border-bottom-left-radius: 5px;
-border-top-left-radius: 5px;
-margin-right: 1px;
-padding-right: 1px;
-margin-bottom: -1px;
+.projectwrapper:nth-child(odd) {
+    border-left: 4px solid $bordercolor;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: 1px;
+    padding-right: 1px;
+    margin-bottom: -1px;
 
 }
-.projectwrapper:nth-child(even){
+
+.projectwrapper:nth-child(even) {
     border-right: 4px solid$bordercolor;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -87,4 +92,4 @@ margin-bottom: -1px;
     padding-left: 2px;
     margin-bottom: -1px;
 
-    }
+}

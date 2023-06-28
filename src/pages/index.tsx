@@ -11,24 +11,10 @@ const IndexPage: React.FC<PageProps> = () => {
     <main>
       <Navbar></Navbar>
       <div className={styles.homewrapper}>
- <h1>
-        Congratulations
-      </h1>
-      <p>Hello welcome</p>
+
+      <h1>Projects</h1>
       <Projects></Projects>
-      <About path={""} uri={""} location={undefined} children={undefined} params={undefined} pageResources={{
-        component: undefined,
-        json: {
-          data: undefined,
-          pageContext: undefined
-        },
-        page: {
-          componentChunkName: "",
-          path: "",
-          webpackCompilationHash: "",
-          matchPath: undefined
-        }
-      }} data={undefined} pageContext={undefined} serverData={undefined}/>
+      <About />
       <Contact></Contact>
     
       </div>
