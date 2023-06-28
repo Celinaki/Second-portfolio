@@ -2,7 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import * as style from "../styles/oneproject.module.scss"
 import Giticon from "../images/pngwing.com.png"
-import Openexternal from "../images/open-external-link-icon.svg"
+import Openexternal from "../images/external-link.svg"
 const Projects: React.FC<PageProps> = () => {
     const examples = [
         {
@@ -79,6 +79,7 @@ const Projects: React.FC<PageProps> = () => {
 
     return (
         <div>
+            
             {examples.map(project =>
                 <div className={style.projectwrapper}>
                     <h2>{project.title}</h2>
@@ -88,13 +89,15 @@ const Projects: React.FC<PageProps> = () => {
                             <p>{tag}</p>
                         )}
                     </span>
-                    <span>  
+                    <section className={style.buttonscontainer}>
+                    <span className={style.linkscontainer}>  
                         <img src={Giticon} alt="" className={style.projecticons} />
                         <img src={Openexternal} alt="" className={style.projecticons} />
+                        
                     </span>
 
                     <button>See more</button>
-
+</section>
                 </div>
             )}
 
