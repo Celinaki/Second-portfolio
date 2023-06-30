@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import * as style from "../styles/oneproject.module.scss"
-import Giticon from "../images/pngwing.com.png"
+import GitIcon from "../images/Octicons-mark-github.svg"
 import Openexternal from "../images/external-link.svg"
 const Projects: React.FC<PageProps> = () => {
     const examples = [
@@ -91,7 +91,7 @@ const Projects: React.FC<PageProps> = () => {
                     </span>
                     <section className={style.buttonscontainer}>
                     <span className={style.linkscontainer}>  
-                        <img src={Giticon} alt="" className={style.projecticons} />
+                        <img src={GitIcon} alt="" className={style.projecticons} />
                         <img src={Openexternal} alt="" className={style.projecticons} />
                         
                     </span>

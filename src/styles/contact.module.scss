@@ -1,0 +1,22 @@
+.contactwrapper{
+    .email{
+        display: flex;
+        font-size: inherit;
+        align-items: center;
+        gap: 8px;
+        img{
+            height:18px;
+            height: 18px;
+            opacity: .7;
+            
+        }
+    }
+    .iconscontainer{
+        display: flex;
+        gap: 1.5rem;
+        img{
+            height: 35px;
+            width: 35px;
+          }
+    }
+}
