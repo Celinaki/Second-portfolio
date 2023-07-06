@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef , useState} from 'react';
 import emailjs from "@emailjs/browser"
+import Snackbar from '../modals/snackbar';
 
 export const Contactform = () => {
-
+const [emailSent, setEmailSent] = useState<Boolean>(false)
 
     const form = useRef<HTMLFormElement>(null);
 
@@ -18,6 +19,7 @@ export const Contactform = () => {
         .then(
             (result) =>{
                 console.log(result.text);
+                setEmailSent(true)
             },
             (error) =>{
                 console.log(error.text)
@@ -27,7 +29,13 @@ export const Contactform = () => {
 
       
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <div>
+     {emailSent === false ? 
+    <Snackbar message={"Email is now sent"}/>
+    :
+    '' 
+    } 
+       <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
@@ -36,6 +44,8 @@ export const Contactform = () => {
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form>
+    </div>
+   
   );
 };
 
