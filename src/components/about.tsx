@@ -8,7 +8,6 @@ const About: React.FC<PageProps>= () =>{
   <p>Hi!</p>
   <p>My name is Celina and I finished 
     my studies at IT-högskolan as a frontend developer June 2023.</p>
-    
     <p>Being a junior frontend developer I have great a enthusiasm for web development
         and I'm eager to start contributing in real work and learn more.
     </p>

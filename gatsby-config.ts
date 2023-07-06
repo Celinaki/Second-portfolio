@@ -1,7 +1,22 @@
 import type { GatsbyConfig } from "gatsby";
 
-require("dotenv").config();
+require("dotenv").config()
 
+// require("dotenv").config({
+
+//   path: `.env.${process.env}`,
+
+// })
+
+// exports.onCreateWebpackConfig = ({ actions }:any) => {
+//   actions.setWebpackConfig({
+//     resolve: {
+//       fallback: {
+//         crypto: false,
+//       },
+//     },
+//   });
+// };
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `celinasportfolio`,
@@ -16,6 +31,7 @@ const config: GatsbyConfig = {
         spaceId: process.env.CONTENTFUL_SPACE_ID
       }
     },
+    
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
