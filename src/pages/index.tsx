@@ -16,11 +16,11 @@ const IndexPage: React.FC<PageProps> = () => {
 
 </section>
       <h1>Projects</h1>
-      <Contactform/>
+      
       <Projects></Projects>
       <About />
       <Contact></Contact>
-    
+    <Contactform/>
       </div>
      
     </main>

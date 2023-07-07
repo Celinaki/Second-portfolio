@@ -1,0 +1,86 @@
+$fontcolor: rgb(53, 52, 52);
+//alternative color #333
+$secondoption: #FFEDED;
+
+.form {
+    background-color: $fontcolor;
+    padding: 2rem;
+    display: flex;
+    border-radius: 2.5px;
+    flex-direction: column;
+    color: $secondoption;
+    gap: .5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+
+    .messagetext {
+        height: 5rem;
+        resize: vertical;
+        width: 100%;
+        outline: none;
+        box-sizing: border-box;
+        padding: .45rem;
+
+        &:focus {
+            border-image: linear-gradient(to right, rgb(178, 92, 218), rgb(252, 169, 238));
+            border-image-slice: 1;
+            border-width: .2rem;
+
+        }
+    }
+
+    button {
+        background-color: $secondoption;
+        border: none;
+        font-family: inherit;
+        color: $fontcolor;
+        font-weight: 900;
+        font-size: 14px;
+        letter-spacing: 2px;
+        border-radius: 3px;
+        padding: .2rem .9rem;
+        align-self: flex-end;
+        box-shadow: none;
+        transition: 300ms;
+        margin-top: 2rem;
+        cursor: pointer;
+
+        &:hover {
+            border: #f5e6e6;
+            box-shadow: 3px 3px 0px 0px #a89e9e;
+        }
+
+        &:focus {
+            background: linear-gradient(to right, rgb(178, 92, 218), rgb(252, 169, 238));
+        }
+    }
+
+    label {
+        margin-top: 1.5rem;
+    }
+
+    input {
+        height: 2.5rem;
+        box-sizing: border-box;
+        padding: .45rem;
+        outline: none;
+
+        &:focus {
+            border-image: linear-gradient(to right, rgb(178, 92, 218), rgb(252, 169, 238));
+            border-image-slice: 1;
+            border-width: .2rem;
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 991px) {
+    .form {
+        height: 25rem;
+        width: 40%;
+    }
+}
