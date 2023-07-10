@@ -53,12 +53,20 @@ $secondoption: #FFEDED;
         }
 
         &:focus {
-            background: linear-gradient(to right, rgb(178, 92, 218), rgb(252, 169, 238));
+            background: linear-gradient(to right, rgb(227, 190, 245), rgb(247, 213, 242));
+            color: rgb(20, 20, 20);
         }
     }
 
     label {
         margin-top: 1.5rem;
+    }
+    .errormessage{
+        color:red;
+        font-weight:100;
+        font-size:12px;
+        margin:0;
+     
     }
 
     input {
