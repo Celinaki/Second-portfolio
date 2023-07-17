@@ -3,7 +3,7 @@ import type { HeadFC, PageProps } from "gatsby"
 
 const About: React.FC<PageProps>= () =>{
     return(
-<div >
+<div  id="about">
     <h1>About me</h1>   
   <p>Hi!</p>
   <p>My name is Celina and I finished 

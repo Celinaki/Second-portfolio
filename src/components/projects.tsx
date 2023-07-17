@@ -78,8 +78,9 @@ const Projects: React.FC<PageProps> = () => {
     ]
 
     return (
-        <div>
-            
+        <div  id="projects">
+            <h1>Projects</h1>
+            <div>
             {examples.map(project =>
                 <div className={style.projectwrapper}>
                     <h2>{project.title}</h2>
@@ -100,7 +101,7 @@ const Projects: React.FC<PageProps> = () => {
 </section>
                 </div>
             )}
-
+</div>
         </div>
     )
 }

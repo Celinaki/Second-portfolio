@@ -13,16 +13,16 @@ const Navbar = () => {
 
     }, [menuActive])
     return (
-        <nav className={styles.navwrapper}>
+        <nav className={styles.navwrapper}  id="start">
             <section className={styles.logo}>
                 <a href="#">CS</a>
             </section>
             <section className={` ${menuActive ?
                     styles.activenavlist :
                     styles.navlist}`}>
-                <Link to="/" >Home</Link>
-                <Link to="/" >Projects </Link>
-                <Link to="/" >About </Link>
+                <Link to="#start" >Home</Link>
+                <Link to="#projects" >Projects </Link>
+                <Link to="#about" >About </Link>
                 <Link to="#contact" >Contact</Link>
             </section>
             <div className={styles.togglebutton}>

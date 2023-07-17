@@ -6,7 +6,7 @@ import LinkedIn from "../images/LinkedIn_icon.svg"
 import MailIcon from '../images/mail_FILL0_wght400_GRAD0_opsz48.svg'
 const Contact: React.FC<PageProps>= () =>{
     return(
-<div className={style.contactwrapper} >
+<div className={style.contactwrapper}  id="contact" >
     <h1>Contact</h1>
     <p>If you have any further questions or require additional information,
         please do not hesitate to reach out to me via the email address provided below.</p>
