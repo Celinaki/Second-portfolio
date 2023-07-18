@@ -2,94 +2,131 @@ $bordercolor: #edffed;
 $accentcolor: #edffff;
 $fontcolor: rgb(53, 52, 52);
 
-.projectwrapper {
-    border-bottom: 4px solid$bordercolor;
-    min-height: 35vh;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &>* {
-        width: 90%;
-    }
-
-    .projectimg {
-        width: 90%;
-    }
-
-    span {
+.projectscontainer {
+    .projectwrapper {
+        border-bottom: 4px solid$bordercolor;
+        min-height: 35vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         display: flex;
-        width: 90%;
-        flex-wrap: wrap;
-
-        p {
-            margin: .5rem .5rem .5rem 0px;
-            border-radius: 5px;
-            background-color: $accentcolor;
-            padding: 4px 8px;
-        }
-    }
-
-    h2 {
-        margin: 0;
-        margin-bottom: 1rem;
-    }
-
-    .buttonscontainer {
-        display: flex;
-        padding: 3rem 0rem 0rem 0rem;
+        flex-direction: column;
         align-items: center;
 
-        .linkscontainer {
+        &>* {
+            width: 90%;
+        }
+
+        .projectimg {
+            width: 90%;
+        }
+
+        span {
             display: flex;
-            align-items: center;
+            width: 90%;
+            flex-wrap: wrap;
 
-            .projecticons {
-                width: 40px;
-                height: 40px;
-
-                &:nth-child(1) {
-                    height: 32px;
-                }
+            p {
+                margin: .5rem .5rem .5rem 0px;
+                border-radius: 5px;
+                background-color: $accentcolor;
+                padding: 4px 8px;
             }
         }
 
-        button {
-            //all: unset;
-            text-align: center;
-            border-radius: 5.5px;
-            background-color: inherit;
-            font-family: inherit;
-            font-weight: 600;
-            letter-spacing: 1px;
-            padding: 0.5rem 1rem;
-            width: 41%;
-            color: $accentcolor;
-            background-color: $fontcolor;
-
+        h2 {
+            margin: 0;
+            margin-bottom: 1rem;
         }
+
+        .buttonscontainer {
+            display: flex;
+            padding: 3rem 0rem 0rem 0rem;
+            align-items: center;
+
+            .linkscontainer {
+                display: flex;
+                align-items: center;
+
+                .projecticons {
+                    width: 40px;
+                    height: 40px;
+
+                    &:nth-child(1) {
+                        height: 32px;
+                    }
+                }
+            }
+
+            button {
+                //all: unset;
+                text-align: center;
+                border-radius: 5.5px;
+                background-color: inherit;
+                font-family: inherit;
+                font-weight: 600;
+                letter-spacing: 1px;
+                padding: 0.5rem 1rem;
+                width: 41%;
+                color: $accentcolor;
+                background-color: $fontcolor;
+
+            }
+        }
+
     }
 
+    .projectwrapper:nth-child(odd) {
+        border-left: 4px solid $bordercolor;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        margin-right: 1px;
+        padding-right: 1px;
+        margin-bottom: -1px;
+
+    }
+
+    .projectwrapper:nth-child(even) {
+        border-right: 4px solid$bordercolor;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-left: 2px;
+        padding-left: 2px;
+        margin-bottom: -1px;
+
+    }
 }
 
-.projectwrapper:nth-child(odd) {
-    border-left: 4px solid $bordercolor;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    margin-right: 1px;
-    padding-right: 1px;
-    margin-bottom: -1px;
-
+@media only screen and (min-width: 991px) {
+    .projectscontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        .projectwrapper{
+            flex-basis: 40vw;
+        }
+    }
 }
+@media only screen and (min-width: 1200px) {
+    .projectscontainer{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+        column-gap: 4rem;
+        row-gap: 3rem;
+        justify-content: start;
+        .projectwrapper{
+        }
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .projectscontainer{
+        display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  column-gap: 4rem;
+  row-gap: 3rem;
+  justify-content: start;
 
-.projectwrapper:nth-child(even) {
-    border-right: 4px solid$bordercolor;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin-left: 2px;
-    padding-left: 2px;
-    margin-bottom: -1px;
-
+                .projectwrapper{
+        }
+    }
 }
