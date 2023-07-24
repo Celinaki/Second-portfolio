@@ -1,17 +1,21 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import * as style from "../styles/about.module.scss"
 
 const About: React.FC<PageProps>= () =>{
     return(
-<div  id="about">
+<div id="about" className={style.aboutwrapper}>
+    <section >
     <h1>About me</h1>   
   <p>Hi!</p>
   <p>My name is Celina and I finished 
     my studies at IT-högskolan as a frontend developer June 2023.</p>
     <p>Being a junior frontend developer I have great a enthusiasm for web development
         and I'm eager to start contributing in real work and learn more.
-    </p>
-    <h2>My knowledge</h2>
+    </p></section>
+
+    <section >
+         <h2>My knowledge</h2>
     <p>During my studies I had several courses that would make me ready as a developer. 
         With a wide variety of teachnologies taught I learned Vue, React, Typescript, GraphQL, PostgreSQL,
         Git, Trello, Agile methods, MongoDB, Express, Mongoose,
@@ -19,6 +23,8 @@ const About: React.FC<PageProps>= () =>{
         Headless CMS and regular CMS such as wordpress.
         My goto library that I've worked with in my personal projects is mostly React.js.
     </p>
+    </section>
+   <section >
     <h2>Work experience</h2>
         <ul>
             <li>
@@ -46,7 +52,7 @@ const About: React.FC<PageProps>= () =>{
                 <p>During</p>
             </li>
         </ul>
-
+</section>
 </div>
     )
 }

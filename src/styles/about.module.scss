@@ -1,0 +1,11 @@
+@media only screen and (min-width: 900px){
+.aboutwrapper{
+    section:nth-child(odd){
+        width: 50%;
+        }
+section:nth-child(even){
+width: 45%;
+margin-left: auto;
+}
+}    
+}
