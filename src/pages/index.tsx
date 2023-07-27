@@ -19,11 +19,14 @@ const IndexPage: React.FC<PageProps> = () => {
       <Navbar></Navbar>
       <div className={styles.homewrapper}>
   <Hero/>
-   
+   <div className={styles.contentwrapper}> 
+    
+     
       <Projects></Projects>
+      <div className={styles.limitedcontent}>
       <About />
       <Contact></Contact>
-    <Contactform/>
+  </div></div>
       </div>
      
     </main>
