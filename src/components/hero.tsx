@@ -35,12 +35,13 @@ export const Hero = () =>{
       autoPlay={true}
       preload="auto"
       loop
-      style={{width:"100%", height:"100%", objectFit:"cover", borderRadius:"20px"}}  >
+      >
       </video>
        :
       <img src={StillFrame} alt="Field of grass and wheat. Blue sky and almost a sunset."  style={{width:"100%", height:"100%", objectFit:"cover", borderRadius:"20px"}}/>
     } 
-    <button style={{position:"absolute",bottom:"20%", left:"50%", transform:"translateX(-50%)", padding:"0.5rem 2rem", fontFamily:"inherit", fontWeight:800}}>See more</button>
+    <button 
+   >See more</button>
       </div> 
    )
 }
