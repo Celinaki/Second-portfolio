@@ -1,11 +1,35 @@
-@media only screen and (min-width: 900px){
 .aboutwrapper{
-    section:nth-child(odd){
-        width: 50%;
+    margin-top: 5rem;
+    line-height: 150%;
+    ul{
+        list-style: none;
+        margin-top: 2rem;
+        padding: 0;
+
+        li{
+            margin-top: 3.5rem;
+            h3{
+                margin: 0;
+            }
+            .dates{
+                color:#555555;
+                font-size:16px;
+                font-style:italic;
+            }
+
         }
-section:nth-child(even){
-width: 45%;
-margin-left: auto;
+    }
 }
-}    
+@media only screen and (min-width: 900px) {
+    .aboutwrapper {
+
+        section:nth-child(odd) {
+            width: 50%;
+        }
+
+        section:nth-child(even) {
+            width: 45%;
+            margin-left: auto;
+        }
+    }
 }
