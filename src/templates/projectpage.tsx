@@ -9,7 +9,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import GitIcon from "../images/Octicons-mark-github.svg"
 import Openexternal from "../images/external-link.svg"
-import buttonHolder from "../images/buttonholder.svg"
 
 interface ContentfulProjectData {
     category: string;
@@ -100,7 +99,6 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
                     </span>
                 </section>
             </div>
-            {/* <img src={buttonHolder} alt="" /> */}
             <div className={style.blackbox}>
                 {contentfulProject.githubLink && (
                     <a href={contentfulProject.githubLink}>
