@@ -9,6 +9,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import GitIcon from "../images/Octicons-mark-github.svg"
 import Openexternal from "../images/external-link.svg"
+import blackimage from "../images/buttonholder.svg"
 
 interface ContentfulProjectData {
     category: string;
@@ -93,7 +94,7 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
                     </span>
                 </section>
             </div>
-            <div className={style.blackbox}>
+            {/* <div className={style.blackbox}>
                 {contentfulProject.githubLink && (
                     <a href={contentfulProject.githubLink}>
                         <img src={GitIcon} alt="GitHub" className={style.contentfulProjecticons} />
@@ -102,6 +103,18 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
                 {contentfulProject.pageLink && (
                     <a href={contentfulProject.pageLink}>
                         <img src={Openexternal} alt="OpenExternal" className={style.projecticons} /></a>
+                )}
+            </div> */}
+            <div className={style.blackbox} >
+                <img src={blackimage} alt="" />
+                {contentfulProject.githubLink && (
+                    <a href={contentfulProject.githubLink}>
+                        <img src={GitIcon} alt="GitHub" className={`${style.projecticons} ${style.firsticon}`} />
+                    </a>
+                )}
+                {contentfulProject.pageLink && (
+                    <a href={contentfulProject.pageLink}>
+                        <img src={Openexternal} alt="OpenExternal" className={`${style.projecticons} ${style.secondicon}`} /></a>
                 )}
             </div>
         </main>

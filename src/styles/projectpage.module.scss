@@ -26,19 +26,36 @@ min-height: 70vh;
     }
 }
 }
+// .blackbox{
+//     height: 13.5vh;
+//     background-repeat: no-repeat;
+//     background-position: 100% 3%;
+//     background-image: url('../images/buttonholder.svg');
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: end;
+//     position: sticky;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     img{
+//         width: 30px;
+//         height: 30px;
+//         color: white;
+//         z-index: 3;
+//         background-color: white;
+//         padding: .5rem;
+//         margin-right:1.5rem;
+//         margin-bottom: .4rem;
+//         border-radius: 50%;
+//     }
+// }
 .blackbox{
-    height: 13.5vh;
-    background-repeat: no-repeat;
-    background-position: 100% 3%;
-    background-image: url('../images/buttonholder.svg');
     display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    position: sticky;
-    right: 0;
-    bottom: 0;
     width: 100%;
-    img{
+    justify-content: flex-end;
+    position: relative;
+    .projecticons{
         width: 30px;
         height: 30px;
         color: white;
@@ -48,6 +65,15 @@ min-height: 70vh;
         margin-right:1.5rem;
         margin-bottom: .4rem;
         border-radius: 50%;
+        position: absolute;
+    }
+    .firsticon{
+        right: 6em;
+        bottom: 2.5em;
+    }
+    .secondicon{
+        right: 1em;
+        bottom: 2.5em;
     }
 }
 
@@ -67,6 +93,7 @@ min-height: 70vh;
         
             .linkscontainer {
                 display: flex;
+                gap: 1.5rem;
                 align-items: center;
                 .projecticonsgithub{
                     width: 75px;
@@ -85,6 +112,10 @@ min-height: 70vh;
     .blackbox{
         display: none;
     }
+    .blackbox{
+        display: none;
+    }
+
 
 
 }
