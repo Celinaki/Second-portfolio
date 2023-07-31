@@ -25,7 +25,7 @@ export const Hero = () =>{
                  Celina Eftihidis</h1>
 
         <h1 >
-          Frontend webdeveloper</h1>
+          Frontend web developer</h1>
     {
       isDesktop 
       ?
@@ -40,9 +40,23 @@ export const Hero = () =>{
        :
       <img src={StillFrame} alt="Field of grass and wheat. Blue sky and almost a sunset."  style={{width:"100%", height:"100%", objectFit:"cover", borderRadius:"20px"}}/>
     } 
-    <button 
-   >See more</button>
+    {/* <button 
+   >See more</button> */}
+ 
+  {/* <a href="#projects" className={style.scrollbutton}> </a>*/}
+<section className={style.scrollholder}>
+  <span>
+  <a className={style.scrollbutton} href="#projects" ><span></span>Scroll</a>
+
+  </span>
+
+</section>
+
+   
+    
+
       </div> 
+      
    )
 }
 export default Hero;

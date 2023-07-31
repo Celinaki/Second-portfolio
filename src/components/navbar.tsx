@@ -15,28 +15,28 @@ const Navbar = () => {
     return (
         <nav className={styles.navwrapper}  id="start">
             <section className={styles.logo}>
-                <a href="#">CS</a>
+                <Link to="/">CS</Link>
             </section>
             <section className={` ${menuActive ?
                     styles.activenavlist :
                     styles.navlist}`}>
-                <Link to="#start" >Home</Link>
-                <Link to="#projects" >Projects </Link>
-                <Link to="#about" >About </Link>
-                <Link to="#contact" >Contact</Link>
+                <Link to="/" >Home</Link>
+                <Link to="/#projects" >Projects </Link>
+                <Link to="/#about" >About </Link>
+                <Link to="/#contact" >Contact</Link>
             </section>
             <div className={styles.togglebutton}>
                 {
                     menuActive ?
                         <img
                             className={styles.closeicon}
-                            src={Closebutton} alt=""
+                            src={Closebutton} alt="close"
                             onClick={() => setMenuActive(false)}
                         />
                         :
                         <img
                             className={styles.menuicon}
-                            src={Menubutton} alt=""
+                            src={Menubutton} alt="open"
                             onClick={() => setMenuActive(true)} />
                 }
 

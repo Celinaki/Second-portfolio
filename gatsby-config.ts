@@ -50,7 +50,11 @@ const config: GatsbyConfig = {
       options: {
         fonts: [
           "Monospace Font:400,700",
-          `Montserrat`
+          `Montserrat`,
+          'Caprasimo',
+          'Lobster Two',
+          'Calistoga',
+          'Abhaya Libre'
            // Replace with the desired font name and variants
         ],
     
