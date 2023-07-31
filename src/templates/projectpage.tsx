@@ -16,15 +16,9 @@ interface ContentfulProjectData {
     image: Array<{
         url: string
     }>;
-    stack: {
-        fields: {
-            file: {
-                en_US: {
-                    url: string;
-                };
-            };
-        };
-    }[];
+    stack: Array<{
+        url:string
+    }>;
     title: string;
     pageLink?: string;
     githubLink?: string;
@@ -79,7 +73,7 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
                     <span>
                         {
                             contentfulProject.stack.map(tech =>
-                                <img src={tech.fields.file.en_US.url} alt="" />
+                                <img src={tech.url} alt="" />
                             )
                         }
                     </span>
@@ -149,13 +143,7 @@ query SingleProjectQuery($title: String) {
       url
     }
     stack {
-        fields {
-            file {
-              en_US {
-                url
-              }
-            }
-          }
+      url
     }
     title
     pageLink

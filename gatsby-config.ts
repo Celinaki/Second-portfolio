@@ -2,21 +2,6 @@ import type { GatsbyConfig } from "gatsby";
 
 require("dotenv").config()
 
-// require("dotenv").config({
-
-//   path: `.env.${process.env}`,
-
-// })
-
-// exports.onCreateWebpackConfig = ({ actions }:any) => {
-//   actions.setWebpackConfig({
-//     resolve: {
-//       fallback: {
-//         crypto: false,
-//       },
-//     },
-//   });
-// };
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `celinasportfolio`,
@@ -55,10 +40,9 @@ const config: GatsbyConfig = {
           'Lobster Two',
           'Calistoga',
           'Abhaya Libre'
-           // Replace with the desired font name and variants
         ],
     
-        display: "swap" // Set to 'swap' for better performance
+        display: "swap" 
       }
     }
   ]
