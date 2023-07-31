@@ -11,20 +11,8 @@ export const Hero = () =>{
 
         <div className={style.herocontainer}>
           <div className={style.overlay}></div>
-        {/* <div style={{position:"absolute", height:"40%", backgroundColor:"#d1cece76",borderRadius:"20px", width:"40%", left:20, top:20,  zIndex:2, display:"flex",
-      flexDirection:"column",alignItems:"center"}}>
-        <h1 style={{ color:"white", marginTop:"5rem",fontFamily:"Lobster Two", letterSpacing:"7px",fontSize:40 ,textShadow:"1px 1px 2px black" }}>
-                 Celina Eftihidis</h1>
-
-        <h1 style={{ color:"white", fontFamily:"Caprasimo", letterSpacing:"7px", textShadow:"1px 1px 2px black" }}>
-          Frontend webdeveloper</h1>
-        </div>
-        <div style={{position:"absolute", height:"40%", backgroundColor:"#bbb3b37a",borderRadius:"20px", width:"40%", left:60, top:60, opacity:0.4}}>
-        </div> */}
-                <h1>
-                 Celina Eftihidis</h1>
-
-        <h1 >
+                <h1>Celina Eftihidis</h1>
+        <h1>
           Frontend web developer</h1>
     {
       isDesktop 
@@ -40,21 +28,11 @@ export const Hero = () =>{
        :
       <img src={StillFrame} alt="Field of grass and wheat. Blue sky and almost a sunset."  style={{width:"100%", height:"100%", objectFit:"cover", borderRadius:"20px"}}/>
     } 
-    {/* <button 
-   >See more</button> */}
- 
-  {/* <a href="#projects" className={style.scrollbutton}> </a>*/}
 <section className={style.scrollholder}>
   <span>
-  <a className={style.scrollbutton} href="#projects" ><span></span>Scroll</a>
-
+  <a className={style.scrollbutton} href="#projects" ><span></span>View my work</a>
   </span>
-
 </section>
-
-   
-    
-
       </div> 
       
    )
