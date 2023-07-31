@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
                             <span className={style.linkscontainer}>
                                 {project.githubLink && (
                                     <a href={project.githubLink}>
-                                        <img src={GitIcon} alt="GitHub" className={style.projecticons} />
+                                        <img src={GitIcon} alt="GitHub" className={style.projecticonsgithub} />
                                     </a>
                                 )}
                                 {project.pageLink && (
