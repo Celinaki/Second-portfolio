@@ -1,6 +1,5 @@
 $maincolor: rgb(220, 220, 236);
 $fontcolor: rgb(53, 52, 52);
-//alternative color #333
 $secondoption: #FFEDED;
 $mainfont: 'Montserrat';
 
@@ -11,8 +10,6 @@ body {
     background-color: $secondoption;
     color: $fontcolor;
     font-family: 'Montserrat';
-
-
 }
 
 html {
@@ -59,8 +56,6 @@ html {
 
     section.navlist {
         display: none;
-
-        a {}
     }
 
     section.activenavlist {
