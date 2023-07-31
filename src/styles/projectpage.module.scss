@@ -1,0 +1,88 @@
+.pagewrapper{
+padding: 2rem 20px 0px 20px;
+min-height: 70vh;
+.description{
+    margin-top: 3rem;
+    h2{
+        margin: 3rem 0rem;
+    }
+}
+.buttonscontainer {
+    display: none;
+
+}
+.techstack{
+    span{
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+
+    }
+}
+}
+.blackbox{
+    height: 13.5vh;
+    background-repeat: no-repeat;
+    background-position: 100% 3%;
+    background-image: url('../images/buttonholder.svg');
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    img{
+        width: 30px;
+        height: 30px;
+        color: white;
+        z-index: 2;
+        background-color: white;
+        padding: .5rem;
+        margin-right:1.5rem;
+        margin-bottom: .4rem;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .pagewrapper{
+        //box-sizing: border-box;
+        padding: 3rem 20vw 10rem 20vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .buttonscontainer {
+            display: flex;
+            padding: 3rem 0rem 0rem 0rem;
+            align-items: center;
+            justify-content: end;
+            //display: block;
+        
+            .linkscontainer {
+                display: flex;
+                align-items: center;
+                .projecticonsgithub{
+                    width: 75px;
+                    height: 75px;
+                }
+                .projecticons {
+                    width: 85px;
+                    height: 85px;
+        
+                    // &:nth-of-type(1) {
+                    //     height: 90px;
+                    // }
+                }
+            }}
+    }
+    .blackbox{
+        display: none;
+    }
+
+
+}

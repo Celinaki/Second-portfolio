@@ -1,4 +1,6 @@
 .contactwrapper{
+    margin-top: 5rem;
+
     .email{
         display: flex;
         font-size: inherit;
@@ -12,11 +14,20 @@
         }
     }
     .iconscontainer{
+        margin-top: 2rem;
         display: flex;
         gap: 1.5rem;
         img{
             height: 35px;
             width: 35px;
           }
+    }
+}
+@media only screen and (min-width: 991px) {
+    .contactwrapper{
+        width: 45%;
+        margin-left: auto;
+        margin-top: 5rem;
+
     }
 }

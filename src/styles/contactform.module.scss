@@ -13,7 +13,7 @@ $secondoption: #FFEDED;
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 
     .messagetext {
         height: 5rem;
@@ -89,6 +89,6 @@ $secondoption: #FFEDED;
 @media only screen and (min-width: 991px) {
     .form {
         height: 25rem;
-        width: 40%;
+       // width: 40%;
     }
 }

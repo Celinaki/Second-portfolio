@@ -1,4 +1,20 @@
+
 .homewrapper{
     //box-sizing: border-box;
     padding: 0px 20px;
+}
+.limitedcontent{
+   // padding: 0px 20px;
+}
+@media only screen and (min-width: 900px){
+.contentwrapper{
+    //box-sizing: border-box;
+    padding: 0px 20vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.limitedcontent{
+    // padding:0px 20vw;
+}
 }
