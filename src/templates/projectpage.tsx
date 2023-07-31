@@ -33,6 +33,7 @@ interface DataProps {
 
 const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
     const { contentfulProject } = data;
+    const image1 = contentfulProject.image[0].url;
     return (
         <main >
             <Navbar />
@@ -106,7 +107,7 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
                 )}
             </div> */}
             <div className={style.blackbox} >
-                <img src={blackimage} alt="" />
+                <img src={blackimage} alt="" style={{zIndex:1}} />
                 {contentfulProject.githubLink && (
                     <a href={contentfulProject.githubLink}>
                         <img src={GitIcon} alt="GitHub" className={`${style.projecticons} ${style.firsticon}`} />
