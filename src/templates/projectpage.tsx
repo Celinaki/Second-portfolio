@@ -106,7 +106,9 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
                         <img src={Openexternal} alt="OpenExternal" className={style.projecticons} /></a>
                 )}
             </div> */}
-            <div className={style.blackbox} >
+            {
+                contentfulProject.githubLink || contentfulProject.pageLink ?
+                  <div className={style.blackbox} >
                 <img src={blackimage} alt="" style={{zIndex:1}} />
                 {contentfulProject.githubLink && (
                     <a href={contentfulProject.githubLink}>
@@ -118,6 +120,9 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
                         <img src={Openexternal} alt="OpenExternal" className={`${style.projecticons} ${style.secondicon}`} /></a>
                 )}
             </div>
+                :''
+            }
+          
         </main>
 
     )
@@ -126,17 +131,6 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
 
 export default OneProjectPage
 
-// export function Head() {
-//     return (
-
-//         <>
-//             <meta name="description" content="Portfolio projects" />
-//             <meta name="keywords" content="HTML, CSS, JavaScript, React, junior frontenddeveloper" />
-//             <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet"></link>
-//             <title>Project</title>
-//         </>
-//     )
-// }
 
 export const Head: React.FC<{ data: DataProps }> = ({ data }) => (
     <Seo
