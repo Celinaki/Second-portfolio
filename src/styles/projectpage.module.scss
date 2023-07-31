@@ -12,6 +12,8 @@ min-height: 70vh;
 
 }
 .techstack{
+    margin-top: 3rem;
+    padding-bottom: 5rem;
     span{
         display: flex;
         gap: 1.5rem;
@@ -40,7 +42,7 @@ min-height: 70vh;
         width: 30px;
         height: 30px;
         color: white;
-        z-index: 2;
+        z-index: 3;
         background-color: white;
         padding: .5rem;
         margin-right:1.5rem;
