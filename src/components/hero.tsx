@@ -30,7 +30,7 @@ export const Hero = () =>{
     } 
 <section className={style.scrollholder}>
   <span>
-  <a className={style.scrollbutton} href="#projects" ><span></span>View my work</a>
+  <a  href="#projects" ><span></span>View my work</a>
   </span>
 </section>
       </div> 

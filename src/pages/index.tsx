@@ -23,7 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
     
      
       <Projects></Projects>
-      <div className={styles.limitedcontent}>
+      <div>
       <About />
       <Contact></Contact>
   </div></div>

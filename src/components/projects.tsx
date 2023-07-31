@@ -42,7 +42,6 @@ const Projects: React.FC = () => {
 }
 `
     )
-    console.log(data.allContentfulProject.nodes)
 
     return (
         <div id="projects" className={style.projects}>

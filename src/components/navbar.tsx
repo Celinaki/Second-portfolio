@@ -35,7 +35,6 @@ const Navbar = () => {
                         />
                         :
                         <img
-                            className={styles.menuicon}
                             src={Menubutton} alt="open"
                             onClick={() => setMenuActive(true)} />
                 }
