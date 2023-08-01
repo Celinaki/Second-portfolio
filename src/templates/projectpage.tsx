@@ -18,7 +18,7 @@ interface ContentfulProjectData {
         url: string
     }>;
     stack: Array<{
-        url:string
+        url: string
     }>;
     title: string;
     pageLink?: string;
@@ -33,35 +33,29 @@ interface DataProps {
 
 const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
     const { contentfulProject } = data;
-    const image1 = contentfulProject.image[0].url;
+
     return (
         <main >
             <Navbar />
             <div className={style.pagewrapper}>
-                <Carousel
-                    useKeyboardArrows
-                    showThumbs={false}
-                    autoPlay
-                    infiniteLoop
-                >
-                    {contentfulProject.image[0].url && (
+                <Carousel useKeyboardArrows showThumbs={false} autoPlay infiniteLoop>
+                    {contentfulProject.image[0]?.url && (
                         <div>
                             <img src={contentfulProject.image[0].url} alt="Image of the page" />
                         </div>
                     )}
 
-{contentfulProject.image[1] && contentfulProject.image[1].url && (
+                    {contentfulProject.image[1]?.url && (
                         <div>
                             <img src={contentfulProject.image[1].url} alt="Image of the page" />
                         </div>
                     )}
 
-                    {contentfulProject.image[2] && contentfulProject.image[2].url && (
+                    {contentfulProject.image[2]?.url && (
                         <div>
                             <img src={contentfulProject.image[2].url} alt="Image of the page" />
                         </div>
                     )}
-
                 </Carousel>
 
 
@@ -75,7 +69,7 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
                     <span>
                         {
                             contentfulProject.stack.map(tech =>
-                                <img src={tech.url} alt="" />
+                                <img src={tech.url} alt="Technology icon" />
                             )
                         }
                     </span>
@@ -108,21 +102,21 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
             </div> */}
             {
                 contentfulProject.githubLink || contentfulProject.pageLink ?
-                  <div className={style.blackbox} >
-                <img src={blackimage} alt="" style={{zIndex:1}} />
-                {contentfulProject.githubLink && (
-                    <a href={contentfulProject.githubLink}>
-                        <img src={GitIcon} alt="GitHub" className={`${style.projecticons} ${style.firsticon}`} />
-                    </a>
-                )}
-                {contentfulProject.pageLink && (
-                    <a href={contentfulProject.pageLink}>
-                        <img src={Openexternal} alt="OpenExternal" className={`${style.projecticons} ${style.secondicon}`} /></a>
-                )}
-            </div>
-                :''
+                    <div className={style.blackbox} >
+                        <img src={blackimage} alt="" style={{ zIndex: 1 }} />
+                        {contentfulProject.githubLink && (
+                            <a href={contentfulProject.githubLink}>
+                                <img src={GitIcon} alt="GitHub" className={`${style.projecticons} ${style.firsticon}`} />
+                            </a>
+                        )}
+                        {contentfulProject.pageLink && (
+                            <a href={contentfulProject.pageLink}>
+                                <img src={Openexternal} alt="OpenExternal" className={`${style.projecticons} ${style.secondicon}`} /></a>
+                        )}
+                    </div>
+                    : ''
             }
-          
+
         </main>
 
     )
