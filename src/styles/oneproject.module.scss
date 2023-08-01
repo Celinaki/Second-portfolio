@@ -83,14 +83,23 @@ $fontcolor: rgb(53, 52, 52);
                 font-family: inherit;
                 font-weight: 600;
                 letter-spacing: 1px;
-                padding: 0.5rem 1rem;
-                width: 41%;
+                display: flex;
+                justify-content: center;
+                //padding: 0.5rem 1rem;
+                font-size: 14px;
+                width: 65%;
                 color: $accentcolor;
                 background-color: $fontcolor;
                 cursor: pointer;
 
                 a {
-                    all: unset;
+                    color: inherit;
+                    text-decoration: none;
+                    display: block;
+                    width: 100%;
+                    // all: unset;
+                    padding: 0.5rem 1rem;
+
                 }
 
             }
@@ -151,6 +160,9 @@ $fontcolor: rgb(53, 52, 52);
 
             .buttonscontainer {
                 height: 5%;
+                button{
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -170,6 +182,9 @@ $fontcolor: rgb(53, 52, 52);
 
             button {
                 transition: 200ms;
+                font-size: 14px;
+                width: 41%;
+
 
                 &:hover {
 
@@ -198,6 +213,15 @@ $fontcolor: rgb(53, 52, 52);
         column-gap: 4rem;
         row-gap: 3rem;
         justify-content: start;
+        .projectwrapper{
+            .buttonscontainer{
+                button{
+                    width: 45%;
+                    font-size: 14px;
+
+                }
+            }
+        }
 
 
     }
