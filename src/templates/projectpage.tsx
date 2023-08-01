@@ -10,6 +10,7 @@ import { Carousel } from 'react-responsive-carousel';
 import GitIcon from "../images/Octicons-mark-github.svg"
 import Openexternal from "../images/external-link.svg"
 import blackimage from "../images/buttonholder.svg"
+import "../styles/carousel.css"
 
 interface ContentfulProjectData {
     category: string;
@@ -38,25 +39,31 @@ const OneProjectPage: React.FC<PageProps<DataProps>> = ({ data }) => {
         <main >
             <Navbar />
             <div className={style.pagewrapper}>
+                <div style={{height:"50vh"}}>
                 <Carousel useKeyboardArrows showThumbs={false} autoPlay infiniteLoop>
                     {contentfulProject.image[0]?.url && (
-                        <div>
-                            <img src={contentfulProject.image[0].url} alt="Image of the page" />
+                        <div style={{height:"50vh"}}>
+                            <img style={{objectFit:"contain", height:"100%"}}
+ src={contentfulProject.image[0].url} alt="Image of the page" />
                         </div>
                     )}
 
                     {contentfulProject.image[1]?.url && (
-                        <div>
-                            <img src={contentfulProject.image[1].url} alt="Image of the page" />
+                        <div style={{height:"50vh",}}>
+                            <img style={{objectFit:"contain",  height:"100%"}}
+ src={contentfulProject.image[1].url} alt="Image of the page" />
                         </div>
                     )}
 
                     {contentfulProject.image[2]?.url && (
-                        <div>
-                            <img src={contentfulProject.image[2].url} alt="Image of the page" />
+                        <div style={{height:"50vh"}}>
+                            <img style={{objectFit:"contain",  height:"100%"}}
+ src={contentfulProject.image[2].url} alt="Image of the page" />
                         </div>
                     )}
                 </Carousel>
+                </div>
+
 
 
                 <section className={style.description}>

@@ -1,0 +1,20 @@
+.carousel-container {
+
+    max-height: 50vh !important;
+
+}
+.carousel-root{
+    max-height: 50vh !important;
+
+}
+
+.carousel .slider-wrapper {
+
+    height: 50vh !important;
+}
+
+
+.carousel .slider-wrapper .slider .slide {
+
+    height: 50vh !important;
+}
