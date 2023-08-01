@@ -20,10 +20,10 @@ const Navbar = () => {
             <section className={` ${menuActive ?
                     styles.activenavlist :
                     styles.navlist}`}>
-                <Link to="/" >Home</Link>
-                <Link to="/#projects" >Projects </Link>
-                <Link to="/#about" >About </Link>
-                <Link to="/#contact" >Contact</Link>
+                <Link to="/" onClick={() => setMenuActive(false)}>Home</Link>
+                <Link to="/#projects" onClick={() => setMenuActive(false)} >Projects </Link>
+                <Link to="/#about" onClick={() => setMenuActive(false)}>About </Link>
+                <Link to="/#contact" onClick={() => setMenuActive(false)}>Contact</Link>
             </section>
             <div className={styles.togglebutton}>
                 {
