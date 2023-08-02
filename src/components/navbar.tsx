@@ -13,13 +13,13 @@ const Navbar = () => {
 
     }, [menuActive])
     return (
-        <nav className={styles.navwrapper}  id="start">
+        <nav className={styles.navwrapper} id="start">
             <section className={styles.logo}>
                 <Link to="/">CS</Link>
             </section>
             <section className={` ${menuActive ?
-                    styles.activenavlist :
-                    styles.navlist}`}>
+                styles.activenavlist :
+                styles.navlist}`}>
                 <Link to="/" onClick={() => setMenuActive(false)}>Home</Link>
                 <Link to="/#projects" onClick={() => setMenuActive(false)} >Projects </Link>
                 <Link to="/#about" onClick={() => setMenuActive(false)}>About </Link>
@@ -36,7 +36,8 @@ const Navbar = () => {
                         :
                         <img
                             src={Menubutton} alt="open"
-                            onClick={() => setMenuActive(true)} />
+                            onClick={() => setMenuActive(true)} 
+                        />
                 }
 
 
@@ -44,7 +45,15 @@ const Navbar = () => {
         </nav>
     );
 };
-export const Head: HeadFC = () => <head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+export const Head: HeadFC = () => <head>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" 
+    />
 </head>
 
 export default Navbar;

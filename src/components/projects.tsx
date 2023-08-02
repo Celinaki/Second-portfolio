@@ -1,6 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import { graphql, useStaticQuery , Link} from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import * as style from "../styles/oneproject.module.scss"
 import GitIcon from "../images/Octicons-mark-github.svg"
 import Openexternal from "../images/external-link.svg"
@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
                                         <img src={Openexternal} alt="OpenExternal" className={style.projecticons} /></a>
                                 )}
                             </span>
-                                    
+
                             <button><Link to={'/project/' + project.title}>
                                 See more</Link></button>
                         </section>
