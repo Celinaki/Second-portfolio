@@ -52,7 +52,9 @@ const Projects: React.FC = () => {
                         <div className={style.textcontainer}>
                             <h2>{project.title}</h2></div>
                         <div className={style.imageholder}>
-                            <img src={project.image[0].url} alt="" className={style.projectimg} />
+                            {project.image && project.image.length > 0 && (
+                                <img src={project.image[0].url} alt="" className={style.projectimg} />
+                            )}
                         </div>
                         <span>
                             {project.hashtags.map(tag =>
